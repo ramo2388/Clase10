@@ -9,6 +9,10 @@
     <script>
         let esMayorDeEdad = false;
         let tieneLicencia = true;
+
+        let puedeconducir=esMayorDeEdad && tieneLicencia;
+        let errordeconducir=esMayorDeEdad || tieneLicencia;
+        
         
         if (esMayorDeEdad && tieneLicencia)
         {
@@ -19,7 +23,8 @@
             console.log("cumple con alguna")
         }
 
-    </script>
-    
+        console.log("\n ¿Puede conducir? ",puedeconducir);
+        console.log("\n ¿Puede conducir con errores? ",errordeconducir);
+    </script>    
 </body>
 </html>
