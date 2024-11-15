@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 4</title>
+</head>
+<body>
+    <script>
+        let nombre = prompt("Ingese su Nombre");
+        let edad = parseInt(prompt("Ingrese su edad"));
+        let esEstudiante = prompt("es estudiante? si/no").toLocaleLowerCase()=="si";
+        console.log("Hola ",nombre," su edad",edad," años");
+        if (edad>18)
+        {
+            console.log("es mayor de edad");
+        }else{
+            console.log("es menor de edad");
+        }
+
+        if (esEstudiante)
+        {
+            console.log("tiene descuento");
+        }
+    </script>    
+</body>
+</html>
